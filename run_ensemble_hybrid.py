@@ -7,13 +7,13 @@ from src.models import load_yolo_model, load_resnet18, run_ensemble_pipeline
 from src.utils import evaluate_detections
 
 # --- Config ---
-YOLO_WEIGHTS = 'weights/yolov8n_v3.6.pt'
+YOLO_WEIGHTS = 'weights/yolov8n.pt'
 RESNET_WEIGHTS = 'weights/resnet18.pth'
-TEST_IMAGE_DIR = 'datasetv3/test/images'
-TEST_GT_DIR = 'datasetv3/test/labels'
+TEST_IMAGE_DIR = 'dataset/test/images'
+TEST_GT_DIR = 'dataset/test/labels'
 DEVICE = 'cpu'
 
-# --- Simplified Ensemble Hyperparameters ---
+# --- Hyperparameters ---
 ENSEMBLE_WEIGHTS = {'yolo': 0.7, 'resnet': 0.3}
 HIGH_CONF_THRESHOLD = 0.5  # Detections above this are trusted. Below this, they are sent to the ensemble.
 FINAL_THRESHOLD = 0.3      # The final hurdle for the combined score.

@@ -87,7 +87,7 @@ def evaluate_detections(predictions, gt_dir, img_dir, iou_thresh=0.5, results_pr
     recall = tp / (tp + fn + 1e-6)
     f1 = 2 * (precision * recall) / (precision + recall + 1e-6)
     
-    print(f"\n📦 Evaluation Metrics for '{results_prefix}' (IoU ≥ {iou_thresh:.2f}):")
+    print(f"\nEvaluation Metrics for '{results_prefix}' (IoU ≥ {iou_thresh:.2f}):")
     print(f"TP: {tp}, FP: {fp}, FN: {fn}")
     print(f"Precision: {precision:.4f}")
     print(f"Recall:    {recall:.4f}")

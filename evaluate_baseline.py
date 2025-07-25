@@ -2,8 +2,8 @@ from ultralytics import YOLO
 from src.models import load_yolo_model
 
 # Configurations
-MODEL_PATH = 'weights/yolov8n_v3.6.pt'
-DATA_YAML = 'unseen_basic/data.yaml'
+MODEL_PATH = 'weights/yolov8n.pt'
+DATA_YAML = 'unseen/data.yaml'
 
 def main():
     print("--- Evaluating YOLOv8 Baseline Model ---")

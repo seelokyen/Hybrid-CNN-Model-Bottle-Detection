@@ -2,13 +2,13 @@ import os
 from tqdm import tqdm
 from torchvision import transforms
 from src.models import load_yolo_model, load_resnet18, run_hard_gate_pipeline
-from src.utils import evaluate_detections, draw_hard_gate_visualization
+from src.utils import evaluate_detections
 
 # Configurations
-YOLO_WEIGHTS = 'weights/yolov8n_v3.6.pt'
+YOLO_WEIGHTS = 'weights/yolov8n.pt'
 RESNET_WEIGHTS = 'weights/resnet18.pth'
-TEST_IMAGE_DIR = 'datasetv3/test/images'
-TEST_GT_DIR = 'datasetv3/test/labels'
+TEST_IMAGE_DIR = 'dataset/test/images'
+TEST_GT_DIR = 'dataset/test/labels'
 DEVICE = 'cpu'
 YOLO_THRESHOLD = 0.5 # Detections above this threshold are sent to hard gate
 

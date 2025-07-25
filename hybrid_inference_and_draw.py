@@ -7,9 +7,9 @@ from torchvision import transforms
 from src.models import load_resnet18
 
 # === Configuration ===
-image_dir = 'datasetv3/test/images'
+image_dir = 'dataset/test/images'
 output_dir = 'results/annotated'
-yolo_weights = 'weights/yolov8n_v3.6.pt'
+yolo_weights = 'weights/yolov8n.pt'
 resnet_weights = 'weights/resnet18.pth'
 conf_thresh = 0.5
 
