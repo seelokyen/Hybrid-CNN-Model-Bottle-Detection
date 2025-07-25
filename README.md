@@ -1,2 +1,1 @@
-# Hybrid CNN Model Bottle Detection
-
+# bottledetectionCNNmodel
